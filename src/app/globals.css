@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Milven-Regular';
+  src: url('/fonts/Milven-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  body {
+    @apply font-jakarta;
+    background: black;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* cursor: none; */
+  }
+}
+
+.title {
+  font-size: 340px; /* Default font size */
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 8rem; /* Medium devices */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 6rem; /* Smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 4rem; /* Smallest devices */
+  }
+}
+
+::selection {
+  background-color: #ff8709; 
+  color: black;
+}
+
+
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation-name: marquee;
+  }
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-inner {
+  display: inline-flex;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-inner span {
+  padding-right: 1rem; 
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

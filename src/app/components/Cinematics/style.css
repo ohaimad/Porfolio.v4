@@ -1,0 +1,9 @@
+.split {
+  opacity: 0;
+  letter-spacing: 0.05rem;
+  will-change: transform;
+}
+
+.split * {
+  will-change: transform;
+}

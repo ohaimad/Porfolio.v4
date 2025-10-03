@@ -1,0 +1,36 @@
+.cursor {
+    pointer-events: none;
+  }
+  
+  .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 9999;
+  }
+  
+  .cursor__ball svg circle {
+    fill: #f7f8fa;
+  }
+  
+  .left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+  }
+  
+  #instructions {
+    position: absolute;
+    color: #666;
+    bottom: 0;
+    padding-bottom: 6px;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+  }

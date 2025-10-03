@@ -1,0 +1,32 @@
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+.split {
+  opacity: 0;
+  letter-spacing: 0.05rem;
+  will-change: transform;
+}
+
+.split * {
+  will-change: transform;
+}
+
+/* Screen reader only class for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

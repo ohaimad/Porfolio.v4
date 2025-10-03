@@ -1,0 +1,22 @@
+.lineParent {
+    overflow: hidden;
+    max-width: max-content;
+  }
+  
+  .mask {
+    overflow: hidden;
+  }
+  
+  .custom {
+    color: #0ae448;
+    outline: 2px #0ae448 solid;
+  }
+  
+  strong, em {
+    color: #0ae448;
+    outline: 2px #0ae448 solid;
+  }
+  
+  .spacer {
+    height: 80vh
+  }

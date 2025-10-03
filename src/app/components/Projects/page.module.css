@@ -1,0 +1,161 @@
+.project{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  border-top: 1px solid rgb(201, 201, 201);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Responsive padding for different screen sizes */
+@media (min-width: 640px) {
+  .project {
+    padding: 30px 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    padding: 40px 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project {
+    padding: 50px 100px;
+  }
+}
+.project:last-of-type{
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project:hover{
+  opacity: 0.5;
+}
+
+.project:hover h2{
+  transform: translateX(-10px);
+}
+
+.project:hover p{
+  transform: translateX(10px);
+}
+
+.project h2{
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+/* Responsive font sizes for project titles */
+@media (min-width: 640px) {
+  .project h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project h2 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project h2 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project h2 {
+    font-size: 60px;
+  }
+}
+
+.project p{
+  transition: all 0.4s;
+  font-weight: 300;
+}
+
+.modalContainer{
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive modal sizes */
+@media (min-width: 640px) {
+  .modalContainer {
+    height: 180px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modalContainer {
+    height: 220px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modalContainer {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+.modalSlider{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.modal{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img{
+  height: auto;
+}
+
+/* .cursor, .cursorLabel{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #455CE9;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 300;
+  pointer-events: none;
+} */
+
+/* Animation styles for split text */
+.split {
+  opacity: 0;
+  letter-spacing: 0.05rem;
+  will-change: transform;
+}
+
+.split * {
+  will-change: transform;
+}
