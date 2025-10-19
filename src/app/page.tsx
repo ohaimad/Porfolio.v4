@@ -5,10 +5,12 @@ import { AnimatePresence, } from 'framer-motion';
 import Title from './components/Title/Title';
 import Preloader from "./components/Preloader"
 import About from "./components/About/about"
+import Services from "./components/Services/Services"
+import Testimonials from "./components/Testimonials/Testimonials"
 import Project from "./components/Projects/page"
 import Cinematics from "./components/Cinematics/page"
-import EarthComponent from "./components/Earth/test";
 import CustomCursor from "./components/Cursor/Cursor";
+import AboutSection from './components/aboutsection/AboutSection';
 
 export default function Home() {
     const [isShow, setIsShow] = useState(false);
@@ -29,9 +31,9 @@ export default function Home() {
     return (
         <main className='tracking-tighter w-full overflow-x-hidden'>
             <CustomCursor />
-            <AnimatePresence mode="wait">
+            {/* <AnimatePresence mode="wait">
                 {isLoading && <Preloader />}
-            </AnimatePresence>
+            </AnimatePresence> */}
             <AnimatePresence>
                 {isShow && (
                     <div id="title">
@@ -50,9 +52,15 @@ export default function Home() {
                     <div id="cinematics">
                         <Cinematics />
                     </div>
-                    <div id="earth" className='relative h-screen w-full border text-white overflow-hidden'>
-                        <EarthComponent />
+                    <div id="services">
+                        <Services />
                     </div>
+                    <div id="testimonials">
+                        <Testimonials />
+                    </div>
+                    {/* <div id="aboutsection">
+                        <AboutSection />
+                    </div> */}
                 </>
             )}
         </main>
