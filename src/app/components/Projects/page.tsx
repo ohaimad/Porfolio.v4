@@ -55,7 +55,7 @@ export default function Home() {
 
     const runAnimation = () => {
       if (hasAnimated.current || !titleRef.current) return;
-      
+
       // Animate the icon first
       if (iconRef.current) {
         gsap.fromTo(iconRef.current,
@@ -153,11 +153,11 @@ export default function Home() {
       />
       <div className="px-8 mb-16">
         <div className="flex items-center gap-4 mb-12 mt-8">
-          <div ref={iconRef} className="w-20 h-20 bg-white rounded-full flex items-center justify-center opacity-0">
-            <ArrowUpRight className="w-10 h-10 text-black" />
+          <div className="services-icon-container">
+            <ArrowUpRight className="services-icon" />
           </div>
           <div ref={titleRef}>
-            <h2 className="text-4xl md:text-5xl lg:text-8xl font-light split">Projects</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-8xl font-light ">PROJECTS</h2>
           </div>
         </div>
 
@@ -261,7 +261,7 @@ export default function Home() {
           <div className="space-y-6 grid-item opacity-0">
             <h3 className="text-lg font-medium text-gray-300">Shell</h3>
             <div className="space-y-4">
-            <a
+              <a
                 href="https://github.com/ohaimad/Minishell"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -275,8 +275,8 @@ export default function Home() {
       </div>
       {/* <div className="flex items-center gap-4 px-8 mb-16">
         <div className="w-1 h-12 bg-white rounded-full flex items-center justify-center"> */}
-          {/* <SquareMenu className="w-5 h-5 text-black" /> */}
-        {/* </div>
+      {/* <SquareMenu className="w-5 h-5 text-black" /> */}
+      {/* </div>
         <h2 className="text-4xl md:text-5xl lg:text-5xl font-light">Summary</h2>
       </div> */}
       <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-8">

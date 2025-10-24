@@ -159,3 +159,13 @@
 .split * {
   will-change: transform;
 }
+
+  .services-icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .services-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
