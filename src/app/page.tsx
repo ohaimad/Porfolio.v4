@@ -11,6 +11,7 @@ import Project from "./components/Projects/page"
 import Cinematics from "./components/Cinematics/page"
 import CustomCursor from "./components/Cursor/Cursor";
 import AboutSection from './components/aboutsection/AboutSection';
+import Footer from './components/Footer/Footer';
 
 export default function Home() {
     const [isShow, setIsShow] = useState(false);
@@ -31,9 +32,9 @@ export default function Home() {
     return (
         <main className='tracking-tighter w-full overflow-x-hidden'>
             <CustomCursor />
-            {/* <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait">
                 {isLoading && <Preloader />}
-            </AnimatePresence> */}
+            </AnimatePresence>
             <AnimatePresence>
                 {isShow && (
                     <div id="title">
@@ -43,9 +44,12 @@ export default function Home() {
             </AnimatePresence>
             {isShow && (
                 <>
-                    <div id="about">
-                        <About />
+                    <div id="aboutsection">
+                        <AboutSection />
                     </div>
+                    {/* <div id="about">
+                        <About />
+                    </div> */}
                     <div id="projects">
                         <Project />
                     </div>
@@ -58,9 +62,9 @@ export default function Home() {
                     <div id="testimonials">
                         <Testimonials />
                     </div>
-                    {/* <div id="aboutsection">
-                        <AboutSection />
-                    </div> */}
+                    <div id="footer">
+                        <Footer />
+                    </div>
                 </>
             )}
         </main>

@@ -2,7 +2,7 @@
 
 .about-section-container {
   font-family: "Manrope", sans-serif;
-  background-color: #1a1a1a;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -69,11 +69,11 @@
 
 .services-header:nth-child(1),
 .services-header:nth-child(3) {
-  transform: translateX(100%) translateY(0%);
+  transform: translateX(150%) translateY(0%);
 }
 
 .services-header:nth-child(2) {
-  transform: translateX(-100%) translateY(0%);
+  transform: translateX(-150%) translateY(0%);
   z-index: 2;
 }
 
@@ -90,7 +90,7 @@
   position: relative;
   width: 60%;
   margin: 0 auto;
-  color: #4f4f4f;
+  color: #1b1b1b;
   --clip-value: 100%;
 }
 
@@ -99,7 +99,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
+  color: #f08820;
   clip-path: inset(0 0 var(--clip-value) 0);
   will-change: clip-path;
 }

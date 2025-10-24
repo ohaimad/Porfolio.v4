@@ -13,7 +13,7 @@ const links = [
   },
   {
     title: "About Me",
-    href: "#about",
+    href: "#aboutsection",
   },
   {
     title: "Projects",
@@ -22,6 +22,14 @@ const links = [
   {
     title: "Cinematics",
     href: "#cinematics",
+  },
+  {
+    title: "Services",
+    href: "#services",
+  },
+  {
+    title: "Testimonials",
+    href: "#testimonials",
   }
 ]
 

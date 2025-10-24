@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.footer {
+  background-color: #000;
+  color: #f4f0ea;
+  font-family: "Manrope", sans-serif;
+  padding: 80px 0 40px 0;
+}
+
+.footer-container {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Main CTA Section */
+.footer-cta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #999;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.cta-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0;
+  flex: 1;
+}
+
+.cta-arrow {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.arrow-icon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f4f0ea;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon:hover {
+  background-color: #f4f0ea;
+  color: #000;
+}
+
+.arrow-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Divider Line */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 60px;
+}
+
+/* Footer Content Grid */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 90px;
+  margin-bottom: 80px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-icon {
+  margin-bottom: 20px;
+}
+
+.section-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #f4f0ea;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 0 20px 0;
+  color: #f4f0ea;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: #ccc;
+}
+
+.hours-title {
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+}
+
+.footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: #f4f0ea;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: end;
+  gap: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #333;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 300;
+  color: #f4f0ea;
+  font-style: italic;
+}
+
+.footer-copyright p,
+.footer-credits p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: #999;
+}
+
+.back-to-top {
+  text-align: right;
+}
+
+.back-to-top-btn {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #f4f0ea;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  opacity: 0.7;
+}
+
+.arrow-up {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Email Link Styling */
+.email-link:hover {
+  color: #f4f0ea !important;
+  text-decoration: underline;
+}
+
+/* CTA Arrow Hover Effect */
+.cta-arrow {
+  cursor: pointer;
+}
+
+.cta-arrow:hover .arrow-icon {
+  background-color: #f4f0ea;
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 0 30px;
+  }
+  
+  .footer-content {
+    gap: 40px;
+  }
+  
+  .footer-bottom {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 30px 0;
+  }
+  
+  .footer-container {
+    padding: 0 20px;
+  }
+  
+  .footer-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+  
+  .cta-arrow {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  
+  .arrow-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .arrow-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+    margin-bottom: 60px;
+  }
+  
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: left;
+  }
+  
+  .back-to-top {
+    text-align: left;
+  }
+  
+  .back-to-top-btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 20px 0;
+  }
+  
+  .footer-container {
+    padding: 0 15px;
+  }
+  
+  .footer-cta {
+    margin-bottom: 40px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-bottom {
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+  }
+}
+
+/* Hover Effects */
+.footer-section:first-child:hover .section-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.footer-section:first-child .section-icon {
+  transition: transform 0.3s ease;
+}
