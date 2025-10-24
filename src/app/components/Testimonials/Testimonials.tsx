@@ -152,13 +152,6 @@ const Testimonials: React.FC = () => {
             initial="hidden"
             animate={controls}
             variants={containerVariants}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: '30px',
-              maxWidth: '1600px',
-              margin: '0 auto'
-            }}
           >
             {spotlightTestimonials.map((testimonial, index) => (
               <motion.div

@@ -93,9 +93,9 @@ const Services: React.FC = () => {
           animate={controls}
           variants={titleVariants}
         >
-          <div className="flex items-center gap-4">
-            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
-              <ArrowUpRight className="w-10 h-10 text-black" />
+          <div className="services-title-wrapper">
+            <div className="services-icon-container">
+              <ArrowUpRight className="services-icon" />
             </div>
             <h2 className="services-title">SERVICES</h2>
           </div>
