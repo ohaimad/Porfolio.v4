@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { AnimatePresence, } from 'framer-motion';
 import Title from './components/Title/Title';
 import Preloader from "./components/Preloader"
-import About from "./components/About/about"
 import Services from "./components/Services/Services"
 import Testimonials from "./components/Testimonials/Testimonials"
 import Project from "./components/Projects/page"

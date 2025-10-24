@@ -11,7 +11,6 @@ const AboutSection: React.FC = () => {
   const aboutRef = useRef<HTMLElement>(null);
   const servicesRef = useRef<HTMLElement>(null);
   const servicesCopyRef = useRef<HTMLElement>(null);
-  const outroRef = useRef<HTMLElement>(null);
   const lenisRef = useRef<Lenis | null>(null);
 
   useEffect(() => {

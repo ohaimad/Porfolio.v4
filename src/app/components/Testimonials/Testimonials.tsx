@@ -197,7 +197,7 @@ const Testimonials: React.FC = () => {
                       flex: 1,
                       fontStyle: 'italic'
                     }}>
-                      "{testimonial.testimonial}"
+                      &ldquo;{testimonial.testimonial}&rdquo;
                     </p>
 
                     {/* Author Info */}
