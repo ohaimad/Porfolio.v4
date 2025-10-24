@@ -8,7 +8,7 @@ import './style.css';
 const spotlightTestimonials = [
   {
     id: 1,
-    name: "Alexandra Thompson",
+    name: "Amina Al-Zahrani",
     position: "Creative Director",
     company: "Pixel Perfect Agency",
     rating: 5,
@@ -16,7 +16,7 @@ const spotlightTestimonials = [
   },
   {
     id: 2,
-    name: "Marcus Williams",
+    name: "Mohammed Al-Otaibi",
     position: "Founder & CEO",
     company: "InnovateNow",
     rating: 5,
@@ -24,7 +24,7 @@ const spotlightTestimonials = [
   },
   {
     id: 3,
-    name: "Sofia Martinez",
+    name: "Fatima Al-Harbi",
     position: "Head of Digital",
     company: "Global Ventures",
     rating: 5,
@@ -32,7 +32,7 @@ const spotlightTestimonials = [
   },
   {
     id: 4,
-    name: "James Chen",
+    name: "Abdullah Al-Qahtani",
     position: "Product Manager",
     company: "TechForward",
     rating: 5,
@@ -40,7 +40,7 @@ const spotlightTestimonials = [
   },
   {
     id: 5,
-    name: "Rebecca Davis",
+    name: "Nora Al-Sadoun",
     position: "Marketing Lead",
     company: "BrandBoost",
     rating: 5,
@@ -48,7 +48,7 @@ const spotlightTestimonials = [
   },
   {
     id: 6,
-    name: "Daniel Rodriguez",
+    name: "Khalid Al-Shamri",
     position: "CTO",
     company: "NextGen Solutions",
     rating: 5,
@@ -124,7 +124,7 @@ const Testimonials: React.FC = () => {
           </h2>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="testimonials-description"
           initial="hidden"
           animate={controls}
@@ -135,7 +135,7 @@ const Testimonials: React.FC = () => {
             <br />
             complete their customer journeys.
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* SpotlightCard Section */}
         <motion.div
