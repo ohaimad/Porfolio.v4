@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { opacity, slideUp } from './animate';
 
 // const words = ["✨ Every", "pixel", "tells", "a story", "yours", "begins", "here ✨"]
-const words = ["✨ You can say ( wow ) later ✨"]
+const words = ["✨ Made with HATE ✨"]
 
 export default function Index() {
     const [dimension, setDimension] = useState({width: 0, height:0});

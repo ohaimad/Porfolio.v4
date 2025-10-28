@@ -129,14 +129,14 @@ const AboutSection: React.FC = () => {
     <div className="about-section-container">
       <section className="hero" ref={heroRef}>
         <div className="hero-img">
-          <img src="/images/img.jpeg" alt="Hero" />
+          <img src="/images/mee.JPG" alt="Hero" />
         </div>
       </section>
 
       <section className="about" ref={aboutRef}>
         <h1 className="animate-text">
-          A space for work shaped with clarity and intention. Each project follows
-          a simple path from thought to form, from form to function.
+          Otmane Haimad - UI/UX Designer & Front-End Developer.
+          I design flows, not buttons.
         </h1>
       </section>
 
@@ -154,7 +154,7 @@ const AboutSection: React.FC = () => {
 
       <section className="services-copy" ref={servicesCopyRef}>
         <h1 className="animate-text">I entered the web industry in 2020,
-          studying various technologies on my own.
+          studying various technologies .
           I&apos;m currently working as a UI/UX designer.
           Besides implementation, I have an interest
           in design and actively create various things daily.
