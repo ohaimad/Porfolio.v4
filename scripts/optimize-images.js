@@ -5,11 +5,17 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 
-const inputDir = 'public/images';
-const outputDir = 'public/images/optimized';
+const inputDir = 'public/images-source';
+const outputDir = 'public/images';
 
 async function optimizeImages() {
   try {
+    // Check if source directory exists
+    if (!fs.existsSync(inputDir)) {
+      console.log(`ℹ️  Source directory ${inputDir} not found. Using existing optimized images.`);
+      return;
+    }
+
     // Ensure output directories exist
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });

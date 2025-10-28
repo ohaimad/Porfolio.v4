@@ -679,6 +679,7 @@ class ArcballControl {
 
 interface MenuItem {
   image: string;
+  imageFallback?: string; // Fallback image for WebP support
   link?: string;       // Optional external link
   video?: string;      // New: Local video path
   title: string;
@@ -928,13 +929,26 @@ class InfiniteGridMenu {
     canvas.width = this.atlasSize * cellSize;
     canvas.height = this.atlasSize * cellSize;
 
+    // Load images with WebP support and fallbacks
     Promise.all(
       this.items.map(
         (item) =>
-          new Promise<HTMLImageElement>((resolve) => {
+          new Promise<HTMLImageElement>((resolve, reject) => {
             const img = new Image();
             img.crossOrigin = "anonymous";
             img.onload = () => resolve(img);
+            img.onerror = () => {
+              // If WebP fails, try fallback image
+              if (item.imageFallback && item.image !== item.imageFallback) {
+                const fallbackImg = new Image();
+                fallbackImg.crossOrigin = "anonymous";
+                fallbackImg.onload = () => resolve(fallbackImg);
+                fallbackImg.onerror = () => reject(new Error(`Failed to load both WebP and fallback for ${item.title}`));
+                fallbackImg.src = item.imageFallback;
+              } else {
+                reject(new Error(`Failed to load image for ${item.title}`));
+              }
+            };
             img.src = item.image;
           })
       )
@@ -955,6 +969,21 @@ class InfiniteGridMenu {
         canvas
       );
       gl.generateMipmap(gl.TEXTURE_2D);
+    }).catch((error) => {
+      console.warn('Some images failed to load:', error);
+      // Continue with whatever images loaded successfully
+      gl.bindTexture(gl.TEXTURE_2D, this.tex);
+      gl.texImage2D(
+        gl.TEXTURE_2D,
+        0,
+        gl.RGBA,
+        canvas.width,
+        canvas.height,
+        0,
+        gl.RGBA,
+        gl.UNSIGNED_BYTE,
+        null
+      );
     });
   }
 

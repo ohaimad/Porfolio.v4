@@ -130,8 +130,8 @@ const AboutSection: React.FC = () => {
       <section className="hero" ref={heroRef}>
         <div className="hero-img">
           <picture>
-            <source srcSet="/images/optimized/mee.webp" type="image/webp" />
-            <img src="/images/optimized/fallback/mee.JPG" alt="Hero" />
+            <source srcSet="/images/mee.webp" type="image/webp" />
+            <img src="/images/fallback/mee.JPG" alt="Hero" />
           </picture>
         </div>
       </section>

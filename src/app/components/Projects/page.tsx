@@ -12,32 +12,31 @@ import "./page.module.css";
 const projects = [
   {
     title: "BMJ",
-    src: "1.png",
+    src: "1.webp",
     color: "#000000",
     url: "https://www.behance.net/gallery/214693301/BMJ"
   },
   {
     title: "VELOXFORCE",
-    src: "2.png",
+    src: "2.webp",
     color: "#000000",
     url: "https://www.behance.net/gallery/213726105/Modern-Landing-Page-Design"
   },
   {
     title: "BRANDING",
-    src: "3.png",
+    src: "3.webp",
     color: "#000000",
     url: "https://www.behance.net/gallery/175450147/LOGOFOLIO"
   },
   {
     title: "TSHIRTS",
-    src: "4.png",
+    src: "4.webp",
     color: "#000000",
     url: "https://www.behance.net/gallery/215114009/ODYSSEY-2024"
-  }
-  ,
+  },
   {
     title: "CUB3D",
-    src: "5.png",
+    src: "5.webp",
     color: "#000000",
     url: "https://github.com/ohaimad/Cub3D"
   }

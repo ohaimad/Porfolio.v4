@@ -10,6 +10,7 @@ const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '700
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/mee.JPG" />
       <body className={plusJakarta.className}>
         <Analytics />
         <Cursor />

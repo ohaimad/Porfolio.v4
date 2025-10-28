@@ -8,25 +8,29 @@ import './style.css';
 
 const items = [
     {
-        image: '/images/Cyberodysey.png',
+        image: '/images/Cyberodysey.webp',
+        imageFallback: '/images/fallback/Cyberodysey.png',
         video: '/videos/Odyseyy.mp4',
         title: 'Akasec',
-        description: 'Cyberodysey is always a great experience'
+        description: 'Cyberodysei is always a great experience'
     },
     {
-        image: '/images/Inception.png',
+        image: '/images/Inception.webp',
+        imageFallback: '/images/fallback/Inception.png',
         video: '/videos/Inception.mp4',
         title: 'Inception',
         description: 'Only the Mobb will know what it is'
     },
     {
-        image: '/images/ANTICHABTA.png',
+        image: '/images/ANTICHABTA.webp',
+        imageFallback: '/images/fallback/ANTICHABTA.png',
         video: '/videos/Antichabta.mp4',
         title: 'Antichbata',
         description: 'Um6p was cool with the fam, right?'
     },
     {
-        image: '/images/Biri.png',
+        image: '/images/Biri.webp',
+        imageFallback: '/images/fallback/Biri.png',
         video: '/videos/Biri.mp4',
         title: 'Conference',
         description: 'Biri doing Biri things'
