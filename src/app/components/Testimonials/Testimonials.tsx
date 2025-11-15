@@ -8,7 +8,7 @@ import './style.css';
 const spotlightTestimonials = [
   {
     id: 1,
-    name: "Amina Al-Zahrani",
+    name: "Aymane Biri",
     position: "Creative Director",
     company: "Pixel Perfect Agency",
     rating: 5,
@@ -16,7 +16,7 @@ const spotlightTestimonials = [
   },
   {
     id: 2,
-    name: "Mohammed Al-Otaibi",
+    name: "Zakaria Mrabt",
     position: "Founder & CEO",
     company: "InnovateNow",
     rating: 5,
@@ -24,7 +24,7 @@ const spotlightTestimonials = [
   },
   {
     id: 3,
-    name: "Fatima Al-Harbi",
+    name: "Anas Elwargi",
     position: "Head of Digital",
     company: "Global Ventures",
     rating: 5,
@@ -32,7 +32,7 @@ const spotlightTestimonials = [
   },
   {
     id: 4,
-    name: "Abdullah Al-Qahtani",
+    name: "Ahmed El Mountassi",
     position: "Product Manager",
     company: "TechForward",
     rating: 5,
@@ -40,7 +40,7 @@ const spotlightTestimonials = [
   },
   {
     id: 5,
-    name: "Nora Al-Sadoun",
+    name: "Hatim Mzah",
     position: "Marketing Lead",
     company: "BrandBoost",
     rating: 5,
@@ -48,7 +48,7 @@ const spotlightTestimonials = [
   },
   {
     id: 6,
-    name: "Khalid Al-Shamri",
+    name: "Ichrak Al-Shamri",
     position: "CTO",
     company: "NextGen Solutions",
     rating: 5,

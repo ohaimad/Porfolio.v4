@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './animate';
 
-// const words = ["✨ Every", "pixel", "tells", "a story", "yours", "begins", "here ✨"]
-const words = ["✨ Made with HATE ✨"]
+const words = ["✨ Every design tells a story, yours begins here ✨"]
+// const words = ["✨ Welcome ✨"]
 
 export default function Index() {
     const [dimension, setDimension] = useState({width: 0, height:0});

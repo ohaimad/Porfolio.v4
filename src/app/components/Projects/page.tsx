@@ -17,10 +17,16 @@ const projects = [
     url: "https://www.behance.net/gallery/214693301/BMJ"
   },
   {
-    title: "VELOXFORCE",
-    src: "2.webp",
+    title: "LEET SOLUTION",
+    src: "7.png",
     color: "#000000",
-    url: "https://www.behance.net/gallery/213726105/Modern-Landing-Page-Design"
+    url: "https://leetsolutions.ma"
+  },
+    {
+    title: "WENOVIFY",
+    src: "6.png",
+    color: "#000000",
+    url: "https://wenovify.com/"
   },
   {
     title: "BRANDING",
@@ -161,7 +167,37 @@ export default function Home() {
         </div>
 
         {/* Projects Grid */}
-        <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
+          {/* Websites Column */}
+          <div className="space-y-6 grid-item opacity-0">
+            <h3 className="text-lg font-medium text-gray-300">WEBSITES</h3>
+            <div className="space-y-4 grid">
+              <a
+                href="https://leetsolutions.ma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+              >
+                Leet Solution
+              </a>
+              <a
+                href="https://wenovify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+              >
+                Wenovify
+              </a>
+              <a
+                href="https://www.wedesign.club"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+              >
+                Wedesign
+              </a>
+            </div>
+          </div>
           {/* UI\UX Column */}
           <div className="space-y-6 grid-item opacity-0">
             <h3 className="text-lg font-medium text-gray-300">WEB DESIGN</h3>
