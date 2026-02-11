@@ -9,51 +9,51 @@ const spotlightTestimonials = [
   {
     id: 1,
     name: "Aymane Biri",
-    position: "Creative Director",
-    company: "Pixel Perfect Agency",
+    position: "Ai engineer",
+    company: "",
     rating: 5,
     testimonial: "Absolutely blown away by the quality of work! The design exceeded our expectations and the attention to detail was phenomenal. Our clients have been raving about the new interface."
   },
   {
     id: 2,
     name: "Zakaria Mrabt",
-    position: "Founder & CEO",
-    company: "InnovateNow",
+    position: "Ai engineer",
+    company: "",
     rating: 5,
     testimonial: "From concept to delivery, everything was flawless. The team's expertise in modern web technologies really shows. Our conversion rate increased by 240% after launch!"
   },
   {
     id: 3,
     name: "Anas Elwargi",
-    position: "Head of Digital",
-    company: "Global Ventures",
+    position: "Ai engineer",
+    company: "",
     rating: 5,
     testimonial: "Professional, responsive, and incredibly talented. They transformed our vision into a stunning reality. The user experience is seamless and our brand now stands out."
   },
-  {
-    id: 4,
-    name: "Ahmed El Mountassi",
-    position: "Product Manager",
-    company: "TechForward",
-    rating: 5,
-    testimonial: "The development process was smooth and transparent. Every milestone was met on time. The final product is robust, scalable, and exactly what we needed for our growth."
-  },
-  {
-    id: 5,
-    name: "Hatim Mzah",
-    position: "Marketing Lead",
-    company: "BrandBoost",
-    rating: 5,
-    testimonial: "Exceptional creative work! The branding and web design perfectly captured our company's essence. Our online presence has never looked better. Highly recommend this team!"
-  },
-  {
-    id: 6,
-    name: "Ichrak Al-Shamri",
-    position: "CTO",
-    company: "NextGen Solutions",
-    rating: 5,
-    testimonial: "Outstanding technical expertise and clean code architecture. The performance optimizations were impressive. Our application now runs 3x faster than before!"
-  }
+  // {
+  //   id: 4,
+  //   name: "Ahmed El Mountassi",
+  //   position: "Ai Manager",
+  //   company: "",
+  //   rating: 5,
+  //   testimonial: "The development process was smooth and transparent. Every milestone was met on time. The final product is robust, scalable, and exactly what we needed for our growth."
+  // },
+  // {
+  //   id: 5,
+  //   name: "Hatim Mzah",
+  //   position: "Marketing Lead",
+  //   company: "BrandBoost",
+  //   rating: 5,
+  //   testimonial: "Exceptional creative work! The branding and web design perfectly captured our company's essence. Our online presence has never looked better. Highly recommend this team!"
+  // },
+  // {
+  //   id: 6,
+  //   name: "Ichrak Al-Shamri",
+  //   position: "CTO",
+  //   company: "NextGen Solutions",
+  //   rating: 5,
+  //   testimonial: "Outstanding technical expertise and clean code architecture. The performance optimizations were impressive. Our application now runs 3x faster than before!"
+  // }
 ];
 
 const Testimonials: React.FC = () => {

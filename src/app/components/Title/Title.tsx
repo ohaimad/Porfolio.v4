@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import Scroll from './Scroll';
+import ColorBends from '@/app/components/Title/bg';
 
 const Title = () => {
   useEffect(() => {
@@ -17,14 +18,7 @@ const Title = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-2] opacity-20 rounded-b-[80px] filter grayscale"
-        loop
-        muted
-        autoPlay
-      >
-        <source src="/videos/Antichabta.mp4" type="video/mp4" />
-      </video>
+      <ColorBends colors={["#ff5c7a", "#ff8c00", "#ff8c00"]}/>
 
       {/* Centered Animated Title */}
       <div className="absolute inset-0 flex justify-center items-center select-none">
