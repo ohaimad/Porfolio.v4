@@ -1,4 +1,4 @@
-# 🎨 Portfolio v4 - Interactive Creative Showcase
+# 🎨 Portfolio  - Interactive Creative Showcase
 
 A cutting-edge portfolio website built with Next.js, featuring immersive 3D experiences, cinematic video galleries, and fluid animations. This project showcases modern web development techniques with optimized performance and responsive design.
 
